@@ -13,11 +13,11 @@ Generation of random signed networks with a planted optimal partition and the ev
 -----------------------------------------------------------------------
 
 # Description
-This set of `R` and `Julia` scripts was designed to generate random signed networks, where we know their optimal solutions by construction thanks to the definition of [stability range](https://doi.org/10.1145/1553374.1553473) and to apply some partitioning methods onto these networks. These partitioning methods aims to solve the Correlation Clustering Problem. Although we can run many partitioning methods, in this repository we mainly use *CoNS(nbMaxEdit)* method, which aims to explore the direct neighbor optimal solutions of a given optimal solution at distance *nbMaxEdit*. See our article *[Arınık'21]* for more details.
+This set of `R` and `Julia` scripts was designed to generate random signed networks, where we know their optimal solutions by construction thanks to the definition of [stability range](https://doi.org/10.1145/1553374.1553473) and to apply some partitioning methods onto these networks. These partitioning methods aim to solve the Correlation Clustering Problem. Although it is possible to run many partitioning methods, in this repository we mainly use the *CoNS(nbMaxEdit)* method, integrated in the [EnumCC](https://github.com/CompNet/EnumCC) method, which aims to explore the direct neighbor optimal solutions of a given optimal solution up to distance *nbMaxEdit*. See our article *[Arınık'21]* for more details.
 
 
 # Data
-The details about the generator are explained in *[Arınık'21]*. All our results, as well as our generated signed networks with their optimal solutions, are publicly available from [FigShare](https://doi.org/todo) (*article_materials/Dataset1-experiment*).
+The details about the generator are explained in *[Arınık'21]*. All our results, as well as our generated signed networks with their optimal solutions, are publicly available on [FigShare](https://doi.org/todo) (*article_materials/Dataset1-experiment*).
 
 To show explicitly the folder structure used in the signed graph generation and for a quick test, we have already put some generated networks in `in/random-networks` and *some* corresponding optimal partitions in `out/partitions`. 
 
@@ -32,8 +32,8 @@ Here are the folders composing the project:
 
 
 # Installation
-1. Install the [`R` language](https://www.r-project.org/)
-2. Install the [`R` language](https://www.r-project.org/)
+1. Install the [`R` language](https://www.r-project.org)
+2. Install the [`Julia` language](https://julialang.org)
 3. Install the following R packages (R is tested with the version 4.1):
    * [`igraph`](http://igraph.org/r/) Tested with the version 1.2.6.
    * [`XML`](https://cran.r-project.org/web/packages/XML/index.html)
@@ -41,7 +41,7 @@ Here are the folders composing the project:
    * [`ggplot2`](todo)
    * [`scales`](todo)
    * [`ggallin`](todo)
-4. Install the following Julia packages (Julia is tested with the version1.6.2):
+4. Install the following Julia packages (Julia is tested with the version 1.6.2):
    * [`DelimitedFiles`](https://docs.julialang.org/en/v1/stdlib/DelimitedFiles/)
    * [`DataStructures`](https://github.com/JuliaCollections/DataStructures.jl)
    * [`SparseArrays`](https://docs.julialang.org/en/v1/stdlib/SparseArrays/)
@@ -53,8 +53,8 @@ Here are the folders composing the project:
      * `sudo ./cplex_studio<YOUR_VERSION>.linux-x86-64.bin` 
        * The default installation location for education version is: `/opt/ibm/ILOG/CPLEX_Studio<YOUR_VERSION`.
        * The default installation location for trial version is: `/opt/ibm/ILOG/CPLEX_Studio_Community<YOUR_VERSION/cplex/bin/x86-64_linux/`.
-6. Download the project of `ExCC` on [github](https://github.com/arinik9/ExCC). First, configure and then compile it. To test it, you can run the file `run.sh`.If everything works (i.e. if a file `sol0.txt` created in the output folder), move the executable file `ExCC.jar`, which is in `exe`, into the `lib/ExCC` folder in this project.
-7. Download the project of `ClusteringEditDistance` on [github](https://github.com/arinik9/ClusteringEditDistance). Move the executable file `EnumCC.jar` and `RNSCC.jar` into the `lib/EnumCC` folder in this project.
+6. Download the project of `ExCC` on [github](https://github.com/CompNet/ExCC). First, configure and then compile it. To test it, you can run the file `run.sh`.If everything works (i.e. if a file `sol0.txt` created in the output folder), move the executable file `ExCC.jar`, which is in `exe`, into the `lib/ExCC` folder in this project.
+7. Download the project of `EnumCC` on [github](https://github.com/CompNet/EnumCC). Move the executable files `EnumCC.jar` and `RNSCC.jar` into the `lib/EnumCC` folder in this project.
 
 
 # Use
