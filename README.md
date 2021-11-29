@@ -17,7 +17,7 @@ This set of `R` and `Julia` scripts was designed to generate random signed netwo
 
 
 # Data
-The details about the generator are explained in *[Arınık'21]*. All our results, as well as our generated signed networks with their optimal solutions, are publicly available on [FigShare](https://doi.org/todo) (*article_materials/Dataset1-experiment*).
+The details about the generator are explained in *[Arınık'21]*. All our results, as well as our generated signed networks with their optimal solutions, are publicly available on [FigShare](https://doi.org/10.6084/m9.figshare.15043911) (*article_materials/Dataset1-experiment*).
 
 To show explicitly the folder structure used in the signed graph generation and for a quick test, we have already put some generated networks in `in/random-networks` and *some* corresponding optimal partitions in `out/partitions`. 
 
@@ -65,8 +65,8 @@ Here are the folders composing the project:
 
 
 The script will produce the following subfolders in the folder `out`:
-* `partitions`: Folder containing all obtained partitions.
-* `csv`: Folder containing all csv results, as well as their corresponding plots (as in the submitted article).
+* `benchmark-analysis/partitions`: Folder containing all obtained partitions.
+* `benchmark-analysis/csv`: Folder containing all csv results, as well as their corresponding plots (as in the submitted article).
 
 
 
