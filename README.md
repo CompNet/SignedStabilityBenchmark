@@ -30,7 +30,7 @@ If you use this software, please cite article [[Arınık'23](#references)]:
 
 
 ## Data
-The details about the generator are explained in [[Arınık'21](#references)]. All our results, as well as our generated signed networks with their optimal solutions, are publicly available on [FigShare](https://doi.org/10.6084/m9.figshare.15043911) (`article_materials/Dataset1-experiment`).
+The details about the generator are explained in [[Arınık'21](#references)]. All our results, as well as our generated signed networks with their optimal solutions, are publicly available on [Zenodo](https://doi.org/10.5281/zenodo.13894064) (`article_materials/Dataset1-experiment`).
 
 To show explicitly the folder structure used in the signed graph generation and for a quick test, we have already put some generated networks in `in/random-networks` and *some* corresponding optimal partitions in `out/partitions`. 
 
